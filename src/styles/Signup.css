@@ -1,0 +1,133 @@
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.signup-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.signup-form input:focus {
+  border-color: var(--color-primary);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.signup-button:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.signup-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.signup-message {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 70px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.password-toggle:hover {
+  opacity: 0.75;
+}
+
+.signup-password-error {
+  margin: -5px 0 0;
+  color: var(--color-danger);
+  font-size: 14px;
+}
+
+.signup-password-match {
+  margin: -5px 0 0;
+  color: var(--color-success);
+  font-size: 14px;
+}
+
+.password-strength {
+  margin: -5px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.password-strength.weak {
+  color: var(--color-danger);
+}
+
+.password-strength.medium {
+  color: var(--color-warning);
+}
+
+.password-strength.strong {
+  color: var(--color-success);
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 30px 25px;
+  }
+}
+

@@ -1,0 +1,47 @@
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.home-card h1 {
+  margin-bottom: 15px;
+}
+
+.home-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 30px;
+}
+
+.logout-button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-danger);
+  color: var(--color-white);
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.logout-button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.logout-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+

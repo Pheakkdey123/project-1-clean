@@ -1,0 +1,135 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.login-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: var(--color-primary);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.login-button:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+}
+
+.google-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-text);
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.google-button:hover:not(:disabled) {
+  background: #f9fafb;
+}
+
+.google-button:disabled {
+  opacity: 0.6;
+}
+
+.login-message {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-signup {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 70px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.password-toggle:hover {
+  opacity: 0.75;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: -5px;
+  text-align: right;
+  color: var(--color-primary);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 25px;
+  }
+}
+
